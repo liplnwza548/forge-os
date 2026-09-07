@@ -1,0 +1,96 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "contract_version": "1.1.0",
+  "project_name": "forge-os",
+  "status": "LOCKED",
+  "objective": "Architect and establish Forge OS as an independent, portable AI Operating System enabling multi-provider collaboration across the 6-stage lifecycle without vendor lock-in.",
+  "desired_outcome": "A standalone, version-controlled repository containing comprehensive architectural blueprints, design contracts, and foundational operating specifications ready for Founder Approval before implementation.",
+  "success_criteria": [
+    "Complete suite of 15 architecture specification documents authored under docs/architecture/",
+    "Canonical .forge/ directory schema defined and initialized",
+    "Zero implementation code committed prior to explicit user approval",
+    "Kernel invariants preserved and clean separation between policy (gauntlet-operator) and mechanism (forge-os) maintained",
+    "Founder Critic pass completed with cross-cutting vulnerability analysis and RFC roadmap"
+  ],
+  "definition_of_done": [
+    "All 15 architecture specification documents contain all 7 mandatory sections: Purpose, Responsibilities, Inputs, Outputs, Failure modes, Interactions, Future extensions",
+    "Goal contract and state machine records created and locked at AWAITING_APPROVAL",
+    "Git repository initialized with clean working tree and pushed to liplnwza548/forge-os",
+    "Zero code execution or premature entry into BUILD stage"
+  ],
+  "non_goals": [
+    "Writing executable runtime code in this architectural genesis phase",
+    "Modifying or refactoring the immutable gauntlet-operator kernel package",
+    "Deploying live 24/7 cloud daemons prior to kernel approval",
+    "Building provider-specific API bindings or SDK client libraries"
+  ],
+  "constraints": {
+    "technical": [
+      "Pure markdown architecture documentation",
+      "Must conform to gauntlet-operator 6-stage lifecycle and 5 Global Operating Laws",
+      "Strict policy vs mechanism separation"
+    ],
+    "environmental": [
+      "Windows workstation with git and gh CLI authenticated to liplnwza548",
+      "Scratch project directory confinement"
+    ],
+    "budget": {
+      "max_iterations_per_slice": 5,
+      "max_total_cycles": 15,
+      "max_concurrent_subagents": 2
+    }
+  },
+  "facts": [
+    "gauntlet-operator v1.1.0 is published at liplnwza548/gauntlet-operator as the immutable policy kernel",
+    "No runtime code exists yet for forge-os",
+    "Founder approval is mandatory before any BUILD transition can occur"
+  ],
+  "assumptions": [
+    "Multi-provider AI agents can be normalized behind a standard POSIX-like process abstraction",
+    "A hybrid dual-vault storage (Git + Object/Drive) satisfies both strict immutability and high-capacity multimodal persistence"
+  ],
+  "decisions": [
+    "Decision 1: Forge OS adopts gauntlet-operator as an external vendored kernel for policy enforcement",
+    "Decision 2: Architecture genesis phase strictly concludes at AWAITING_APPROVAL with zero implementation code",
+    "Decision 3: Builder-Critic ratchet pairing is non-negotiable for all future code execution"
+  ],
+  "unknowns": [
+    "Optimal local IPC mechanism across Windows, macOS, and Linux for zero-latency worker coordination",
+    "CoW filesystem performance overhead when running high-frequency agent compile cycles"
+  ],
+  "risks": [
+    {
+      "risk": "Premature execution of build tasks violating kernel gate",
+      "severity": "CRITICAL",
+      "mitigation": "Hard-stop state machine at AWAITING_APPROVAL and require explicit user input to advance"
+    },
+    {
+      "risk": "Provider API breaking changes or deprecations",
+      "severity": "MEDIUM",
+      "mitigation": "Normalized ForgeWorker abstraction layer isolating provider-specific SDK quirks"
+    }
+  ],
+  "dependencies": [
+    "gauntlet-operator kernel",
+    "Git",
+    "GitHub CLI"
+  ],
+  "approved_scope": [
+    "docs/architecture/*.md",
+    ".forge/*",
+    "README.md",
+    "LICENSE",
+    ".gitignore"
+  ],
+  "exit_conditions": [
+    "Architecture documentation complete across all 15 modules",
+    "Founder Critic review integrated into roadmap",
+    "Repository published to GitHub liplnwza548/forge-os",
+    "System parked in AWAITING_APPROVAL state"
+  ],
+  "approval": {
+    "user_confirmed_intent_at": "2026-09-07T18:00:00Z",
+    "user_approved_plan_at": null,
+    "scope_hash": "1c3d8ff2b3fa451fc1b47d4f552d20ce8400514627f7ace4f04fda4ba03b05f8"
+  }
+}

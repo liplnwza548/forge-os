@@ -1,0 +1,40 @@
+# Forge OS Git Ignore
+
+# OS Files
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editor Configurations
+.vscode/
+.idea/
+*.swp
+*~
+
+# Secrets & Environment Variables
+.env
+.env.*
+*.pem
+*.key
+*.cert
+*.pfx
+
+# Dependency & Runtime Caches
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+target/
+dist/
+build/
+
+# Forge Runtime Locks & Volatile Files
+.forge/workers/leases/*.lock
+!.forge/workers/leases/.gitkeep
+.forge/workers/daemon.heartbeat
+.forge/memory/session_cache/*
+!.forge/memory/session_cache/.gitkeep
+.forge/checkpoints/*
+!.forge/checkpoints/.gitkeep
+.forge/artifacts/*
+!.forge/artifacts/.gitkeep
