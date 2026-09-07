@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "manifest_version": "1.0.0",
+  "system": "Forge OS AI-Native Operating System",
+  "version": "1.0.0-architecture",
+  "status": "RATIFIED_FOUNDER_FREEZE",
+  "constitution_version": "1.2.0",
+  "architecture_hash_placeholder": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "runtime_authorized": false,
+  "founder_id": "LiplnwZa",
+  "chief_architect": "ChatGPT GPT-5",
+  "implementation_agent": "AGY (Gemini CLI)",
+  "created_at": "2026-09-08T05:00:00Z",
+  "rfc_list": [
+    { "id": "GLOSSARY", "title": "System Lexicon", "file": "docs/rfc/GLOSSARY.md" },
+    { "id": "README", "title": "Master Architecture Registry", "file": "docs/rfc/README.md" },
+    { "id": "RFC-0000", "title": "The Constitution of Forge OS", "file": "docs/rfc/RFC-0000_FORGE_CONSTITUTION.md" },
+    { "id": "RFC-0001", "title": "The Kernel Contract", "file": "docs/rfc/RFC-0001_KERNEL_CONTRACT.md" },
+    { "id": "RFC-0002", "title": "Memory Graph Protocol", "file": "docs/rfc/RFC-0002_MEMORY_GRAPH_PROTOCOL.md" },
+    { "id": "RFC-0003", "title": "Worker Lease Protocol", "file": "docs/rfc/RFC-0003_WORKER_LEASE_PROTOCOL.md" },
+    { "id": "RFC-0004", "title": "Provider Capability Matrix", "file": "docs/rfc/RFC-0004_PROVIDER_CAPABILITY_MATRIX.md" },
+    { "id": "RFC-0005", "title": "Skill Package Specification", "file": "docs/rfc/RFC-0005_SKILL_PACKAGE_SPEC.md" },
+    { "id": "RFC-0006", "title": "Project Ledger Protocol", "file": "docs/rfc/RFC-0006_PROJECT_LEDGER_PROTOCOL.md" },
+    { "id": "RFC-0007", "title": "Forge Ratchet Protocol", "file": "docs/rfc/RFC-0007_FORGE_RATCHET_PROTOCOL.md" },
+    { "id": "RFC-0008", "title": "Verification Contract Protocol", "file": "docs/rfc/RFC-0008_VERIFICATION_CONTRACT_PROTOCOL.md" },
+    { "id": "RFC-0009", "title": "Scope Shield Protocol", "file": "docs/rfc/RFC-0009_SCOPE_SHIELD_PROTOCOL.md" },
+    { "id": "RFC-0010", "title": "Trust and Provenance Protocol", "file": "docs/rfc/RFC-0010_TRUST_AND_PROVENANCE_PROTOCOL.md" }
+  ],
+  "boot_sequence": [
+    "Phase 0: GLOSSARY.md -> RFC-0000 (Constitution)",
+    "Phase 1: RFC-0001 (Kernel Contract & 13-State Machine)",
+    "Phase 2: RFC-0009 (Scope Shield) -> RFC-0003 (Worker Lease)",
+    "Phase 3: RFC-0008 (Verification Contract) -> RFC-0007 (Forge Ratchet)",
+    "Phase 4: RFC-0002 (Memory Graph) -> RFC-0006 (Project Ledger) -> RFC-0010 (Trust Protocol)",
+    "Phase 5: RFC-0004 (Capability Matrix) -> RFC-0005 (Skill Package Spec)"
+  ]
+}
